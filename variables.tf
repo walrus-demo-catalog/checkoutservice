@@ -51,7 +51,7 @@ variable "paymentservice_name" {
 variable "emailservice_name" {
   type        = string
   description = "The email service name in env to connect"
-  default     = "emailservice_name"
+  default     = "emailservice"
 }
 
 # @group "Kubernetes Configuration"
