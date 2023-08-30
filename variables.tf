@@ -31,6 +31,14 @@ variable "productcatalogservice_name" {
 }
 
 # @group "Kubernetes Configuration"
+# @label "The Shipping Service Name"
+variable "shippingservice_name" {
+  type        = string
+  description = "The shipping service name in env to connect"
+  default     = "shippingservice"
+}
+
+# @group "Kubernetes Configuration"
 # @label "The Payment Service Name"
 variable "paymentservice_name" {
   type        = string
