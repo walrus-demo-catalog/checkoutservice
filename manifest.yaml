@@ -12,6 +12,7 @@ spec:
       labels:
         app: checkoutservice
     spec:
+      replicas: ${replicas}
       serviceAccountName: default
       securityContext:
         fsGroup: 1000
