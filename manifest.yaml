@@ -4,6 +4,7 @@ metadata:
   name: checkoutservice
   namespace: ${namespace}
 spec:
+  replicas: ${replicas}
   selector:
     matchLabels:
       app: checkoutservice
@@ -12,7 +13,6 @@ spec:
       labels:
         app: checkoutservice
     spec:
-      replicas: ${replicas}
       serviceAccountName: default
       securityContext:
         fsGroup: 1000
